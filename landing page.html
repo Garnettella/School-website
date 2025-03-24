@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Landing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap")
+
+          * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;   
+            }
+            section{
+                min-height: 100vh;
+                background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("image1 (1).png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .house{
+            width: 85%;
+            margin: auto;
+           } 
+          nav{
+            height: 80px;
+           }
+           nav h3{
+            float: left;
+            line-height: 80px;
+            font-size: inline;
+            font-size: 35px;
+            color: cornsilk;
+           }
+           nav ul{
+            float: right;
+            line-height: 80px;
+           }
+           nav ul li{
+            display: inline-block;
+            list-style: none;
+            padding: 0px, 5px;
+           } 
+           nav ul li a{
+            color: cornsilk;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 7px 8px;
+           }
+           nav ul li a:hover{
+            background-color: #c2acf5;
+            transition: 0.5s ease;
+           }
+           nav ul li .active{
+            background-color: #512da8;
+           }
+          .Write-up{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            transform: translateY(25vh);
+          } 
+          .Write-up h1{
+            font-size: 36px;
+            color: cornsilk;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            text-align: right; 
+            
+          }
+          .Write-up p{
+            font-size: 18px;
+            color: cornsilk;
+            line-height: 1.5;
+            margin-bottom: 50px;  
+          }
+          .Write-up .btn{
+            color: cornsilk;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 12px 25px;
+            letter-spacing: 1.s;
+            background-color: transparent;
+          }
+          .Write-up .btn:hover{
+            background-color:#512da8 ;
+            transition: 0.2s ease;
+          }
+        </style>
+        </head>
+
+        <body>
+<section>
+    <div class="house">
+        <nav>
+            <h3>TA School</h3>
+            <ul>
+                <li><a href="landing page.html" class="active">Home</a></li>
+                <li><a href="our team.html">Our Team</a></li>
+                <li><a href="Enrollment.html">Enroll</a></li>
+                <li><a href="project.html">Explore</a></li>
+                <!-- <li><a href="project.html"></a></li> -->
+                <ul>
+        </nav>
+        <div class="Write-up">
+            <h1>TA Coding School</h1>
+            <p>Dedicated to empowering the next generation of tech innovators.<br> Our mission is to provide high quality, accessible education to individuals of all levels.<br>
+                Want to start a new career, advance in your current role, or simply explore the world of programming?</p><br>
+        <a href="project.html" class="btn">Explore</a>
+
+        </div>
+    </div>
+</section>
+        </body>
+</html>
