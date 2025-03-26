@@ -34,11 +34,11 @@ body{
     margin: 20px 0;
 }
 .container span{
-    font-size: 12px;
+    font-size: 10px;
 }
 .container a{
     color: #333;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
@@ -120,7 +120,7 @@ body{
     }
 }
 .socials{
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .socials a{
     border: 1px solid #ccc;
@@ -128,7 +128,7 @@ body{
     display: inline-flex;
     align-items:center ;
     justify-content: center;
-    width: 40px;
+    width: 30px;
     margin: 0 3px;
     height: 100%; 
 }
@@ -192,6 +192,9 @@ body{
 
     .sign-in, .sign-up {
         width: 50%;
+    }
+    .toggle-container {
+        display: none;
     }
 
 }
