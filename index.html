@@ -1,70 +1,102 @@
 <!DOCTYPE html>
-<html>
-     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="project.css">
-        
-
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Sign-up</title>
-     </head>
-
-     <body>
-        
-        <div class="container" id="container">
-            <div class="form Sign-up">
-                <form>
-                    <h1>Create Account</h1>
-                    <div class="socials">
-                        <a href="https://wa.link/rcakxe" class="icons"><i class="bx bxl-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/thomasangella" class="icons"><i class="bx bxl-linkedin"></i></a>
-                        <a href="https://www.instagram.com/thomas_ongella?igsh=b3F4YTI6NHU0ZGVi" class="icons"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://www.google.com" class="icons"><i class="bx bxl-google"></i></a>
-                    </div>
-                    <span>Register with Email</span>
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Enter Email" required>
-                        <input type="password" placeholder="Enter Password"required >
-                        <button>Sign-up</button>
-                </form>
-            </div>
-            
-
-            <div class="form sign-in">
-                <form>
-                    <h1>Sign in</h1>
-                    <div class="socials">
-                        <a href="https://wa.link/rcakxe" class="icons"><i class="bx bxl-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/thomasangella" class="icons"><i class="bx bxl-linkedin"></i></a>
-                        <a href="https://www.instagram.com/thomas_ongella?igsh=b3F4YTI6NHU0ZGVi" class="icons"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://www.google.com" class="icons"><i class="bx bxl-google"></i></a>
-                    </div>
-                    <span>Login with Email & Password</span>
-                        <input type="email" placeholder="Enter Email"required>
-                        <input type="password" placeholder="Enter Password"required >
-                        <a href="#">Forgot Password</a>
-                        <button><a href="landing page.html">Sign in</a> </button>
-                </form>
-            </div>
-            <div class="toggle-container">
-                <div class="toggle">
-                    <div class="toggle-panel toggle-right">
-                        <h1>Welcome to <br>TA Coding School</h1>
-                        <p>Sign in with ID & Password</p>
-                        <button class="hidden" id="register">Sign in </button>
-                    </div>
-                    <div class="toggle-panel toggle-left">
-                        <h1>Hey There!</h1>
-                        <p>Join TA Coding School Today</p>
-                        <button class="hidden" id="login"><a href="#">Sign-up</a></button>
-                    </div>
-                </div>
-              </div>
-             </div>
-        <script src="script.js"></script>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing | TA Coding School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("image1 (1).png") no-repeat center center/cover;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 20px;
+        }
+        nav h3 {
+            font-size: 35px;
+            color: cornsilk;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: cornsilk;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 7px 12px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover, .active {
+            background-color: #512da8;
+            transition: 0.3s;
+        }
+        .content {
+            text-align: center;
+            margin-top: 25vh;
+            color: cornsilk;
+        }
+        .content h1 {
+            font-size: 36px;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+        .btn {
+            color: cornsilk;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 12px 25px;
+            border: 2px solid cornsilk;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #512da8;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h3>TA School</h3>
+            <ul>
+                <li><a href="landing page.html" class="active">Home</a></li>
+                <li><a href="our team.html">Our Team</a></li>
+                <li><a href="Enrollment.html">Enroll</a></li>
+                <li><a href="project.html">Explore</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>TA Coding School</h1>
+            <p>Dedicated to empowering the next generation of tech innovators.<br>
+               Our mission is to provide high-quality, accessible education to individuals of all levels.<br>
+               Want to start a new career, advance in your current role, or explore the world of programming?</p>
+            <a href="project.html" class="btn">Explore</a>
+        </div>
+    </div>
+</body>
 </html>
