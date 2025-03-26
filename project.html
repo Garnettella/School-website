@@ -72,13 +72,15 @@ width: 100%;
   }
   .card{
     background-color: transparent;
-    width: 300px;
+    width: 100%;
+    max-width: 350px;
     height: 300px;
+    margin: auto;
     perspective: 1000px;
-    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  
   .flipped{
      position: relative;
     width: 100%;
@@ -122,6 +124,19 @@ width: 100%;
     margin-top: auto;
     padding: 5px;
   }
+
+  @media (max-width: 768px) {
+  h1, h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 8px 12px;
+  }
+}
+
               </style>
 </head>
 
@@ -220,7 +235,6 @@ width: 100%;
           <p>Data science is the art and science of extracting valuable insights from data. As businesses and organizations increasingly rely on data-driven decision-making, 
             the demand for skilled data scientists has soared. Learning data science involves mastering a blend of statistical analysis, programming, and domain-specific knowledge
             You'll delve into tools like Python, R, and SQL, and explore techniques ranging from data wrangling, visualization, machine learning etc.<br>Price: 500,000<br><button><a href="Enrollment.html">Enroll</a></button></p>
-            
         </div>
       </div>
     </div> 
