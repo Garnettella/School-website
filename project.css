@@ -20,10 +20,13 @@ body{
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
     position: relative;
     overflow: hidden;
-    width:768px ;
-    max-width: 100%;
-    min-height: 480px;
+        width: 90%;
+        max-width: 768px;
+        min-height: 480px;
+        margin: auto;    
 }
+
+
 .container P{
     font-size: 14px;
     line-height: 20px;
@@ -51,6 +54,8 @@ body{
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    width: 50%;
+    max-width: 300px; 
 }
 .container button.hidden{
     background-color: transparent;
@@ -73,7 +78,8 @@ body{
     border-radius: 8px;
     margin:8px 0;
     outline: none;
-    width: 100%; 
+    width: 100%;
+    max-width: 300px; 
 }
 .form{
     position: absolute;
@@ -188,6 +194,7 @@ body{
         flex-direction: column;
     }
     .sign-in, .sign-up {
-        width: 100%;
+        width: 50%;
     }
+
 }
