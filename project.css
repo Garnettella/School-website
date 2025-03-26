@@ -190,7 +190,4 @@ body{
     .sign-in, .sign-up {
         width: 100%;
     }
-    .toggle-container {
-        display: none;
-    }
 }
